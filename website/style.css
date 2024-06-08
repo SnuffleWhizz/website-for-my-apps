@@ -1,7 +1,81 @@
+body {
+    background: url(./images/background.jpg) no-repeat center center fixed;
+    width: 100vw;
+    background-size: cover;
+}
+
 h1 {
-    font-size: 72;
+    display: inline-block;
+    text-align: left;
+    font-size: 350%;
     font-weight: bold;
-    text-align: center;
+    background: linear-gradient(90deg, rgb(27, 0, 115) 10%, rgb(119, 20, 195) 41%, rgb(225, 0, 255) 100%);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.h1wrapper {
+    width: 400px;
+    aspect-ratio: 7 / 1;
+    position: relative;
+    top: 5vh;
+    left: -10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    user-select: none;
+}
+
+.logo {
+    height: 70%;
+    min-height: 50px;
+    margin-left: 15px;
+    border-radius: 40%;
+}
+
+.container {
     position: relative;
     top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 24px;
+    user-select: none;
+    position: relative;
+}
+
+.menu li {
+    margin-bottom: 15px;
+    background-color: rgba(0, 195, 156, 0.6);
+    padding: 2px 40px;
+    text-align: center;
+    box-shadow: 0 0 2px white;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px purple;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.description {
+    background-color: rgba(0,0,0,.7);
+    display: inline-block;
+    padding: 10px;
+    margin-right: 30px;
+    width: 40%;
+    max-width: 500px;
+    text-align: right;
+    color: white;
+    box-shadow: 0 0 5px purple;
 }
