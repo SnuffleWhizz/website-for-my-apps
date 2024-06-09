@@ -1,18 +1,8 @@
 body {
     background: url(./images/background.jpg) no-repeat center center fixed;
     width: 100vw;
+    min-width: 400px;
     background-size: cover;
-}
-
-h1 {
-    display: inline-block;
-    text-align: left;
-    font-size: 350%;
-    font-weight: bold;
-    background: linear-gradient(90deg, rgb(27, 0, 115) 10%, rgb(119, 20, 195) 41%, rgb(225, 0, 255) 100%);
-    background-clip: text;
-    color: transparent;
-    margin: 0;
 }
 
 .h1wrapper {
@@ -25,6 +15,39 @@ h1 {
     padding: 10px;
     background-color: rgba(0,0,0,.6);
     user-select: none;
+    animation: slideDown 1.2s;
+}
+
+@keyframes slideRight {
+    0% {
+        left: -500px;
+        opacity: 0;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        right: -500px;
+        opacity: 0;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top: -500px;
+        opacity: 0;
+    }
+}
+
+h1 {
+    display: inline-block;
+    text-align: left;
+    font-size: 350%;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(27, 0, 115) 10%, rgb(119, 20, 195) 41%, rgb(225, 0, 255) 100%);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
 }
 
 .logo {
@@ -57,6 +80,24 @@ h1 {
     box-shadow: 0 0 2px white;
 }
 
+#li1 {
+    position: relative;
+    left: 0;
+    animation: slideRight 1s;
+}
+
+#li2 {
+    position: relative;
+    left: 0;
+    animation: slideRight 1.2s;
+}
+
+#li3 {
+    position: relative;
+    left: 0;
+    animation: slideRight 1.4s;
+}
+
 .menu li:hover {
     cursor: pointer;
     box-shadow: 0 0 5px purple;
@@ -79,4 +120,7 @@ a {
     text-align: right;
     color: white;
     box-shadow: 0 0 5px purple;
+    position: relative;
+    right: 0;
+    animation: slideLeft 1s;
 }
