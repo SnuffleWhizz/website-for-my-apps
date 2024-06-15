@@ -1,17 +1,34 @@
-body {
-    background: url(./images/background.jpg) no-repeat center center fixed;
-    width: 100vw;
-    min-width: 400px;
-    background-size: cover;
+/**********GENERAL**********/
+
+* {
+    box-sizing: border-box;
 }
 
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: url(./images/background.jpg) no-repeat center center fixed;
+    width: 100dvw;
+    min-width: 400px;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+/**********HEADER**********/
+
 .h1wrapper {
-    width: 400px;
-    aspect-ratio: 7 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 10dvh;
+    aspect-ratio: 6 / 1;
     position: relative;
-    top: 5vh;
+    margin: 5dvh 0;
     left: -10px;
-    display: inline-block;
     padding: 10px;
     background-color: rgba(0,0,0,.6);
     user-select: none;
@@ -23,12 +40,20 @@ body {
         left: -500px;
         opacity: 0;
     }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes slideLeft {
     0% {
         right: -500px;
         opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
     }
 }
 
@@ -37,12 +62,15 @@ body {
         top: -500px;
         opacity: 0;
     }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 h1 {
-    display: inline-block;
-    text-align: left;
-    font-size: 350%;
+    display: flex;
+    font-size: 6dvh;
     font-weight: bold;
     background: linear-gradient(90deg, rgb(27, 0, 115) 10%, rgb(119, 20, 195) 41%, rgb(225, 0, 255) 100%);
     background-clip: text;
@@ -51,17 +79,15 @@ h1 {
 }
 
 .logo {
-    height: 70%;
-    min-height: 50px;
+    width: 15%;
     margin-left: 15px;
     border-radius: 40%;
 }
 
 .container {
-    position: relative;
-    top: 10vh;
     display: flex;
     justify-content: space-between;
+    height: 35dvh;
 }
 
 .menu {
@@ -101,6 +127,7 @@ h1 {
 .menu li:hover {
     cursor: pointer;
     box-shadow: 0 0 5px purple;
+    background-color: rgba(0, 195, 156, 0.8);
 }
 
 a {
@@ -112,15 +139,74 @@ a {
 .description {
     background-color: rgba(0,0,0,.7);
     display: inline-block;
-    padding: 10px;
+    padding: 10px 20px;
     margin-right: 30px;
     width: 30%;
     min-width: none;
     max-width: 500px;
+    height: fit-content;
     text-align: right;
     color: white;
     box-shadow: 0 0 5px purple;
     position: relative;
     right: 0;
     animation: slideLeft 1s;
+}
+
+/**********GALLERY**********/
+
+main {
+    margin-top: 20px;
+    width: 100dvw;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+@media (min-width: 852px) {
+    .gallery {
+        max-width: 852px;
+    }
+}
+
+.gallery div a {
+    color: unset;
+    text-shadow: unset;
+    width: 100%;
+    height: 100%;
+}
+
+.galleryItem {
+    display: flex;
+    width: 28%;
+    max-width: 150px;
+    min-width: 100px;
+    aspect-ratio: 1 / 1;
+    background: rgb(240,240,255);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    box-shadow: 0 0 5px 1px rgb(119, 20, 195);
+    user-select: none;
+}
+
+.galleryItem:hover {
+    box-shadow: 0 0 5px 2px rgb(159, 51, 242);
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.card1 {
+    background: url("./images/logo.webp");
+    background-size: cover;
+    background-position: center;
 }
