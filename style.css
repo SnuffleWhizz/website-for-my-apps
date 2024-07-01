@@ -20,21 +20,6 @@ body {
 
 /**********HEADER**********/
 
-.h1wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 10dvh;
-    aspect-ratio: 6 / 1;
-    position: relative;
-    margin: 5dvh 0;
-    left: -10px;
-    padding: 10px;
-    background-color: rgba(0,0,0,.6);
-    user-select: none;
-    animation: slideDown 1.2s;
-}
-
 @keyframes slideRight {
     0% {
         left: -500px;
@@ -66,6 +51,21 @@ body {
         top: 0;
         opacity: 1;
     }
+}
+
+.h1wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 10dvh;
+    aspect-ratio: 6 / 1;
+    position: relative;
+    margin: 5dvh 0;
+    left: -10px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    user-select: none;
+    animation: slideDown 1.2s;
 }
 
 h1 {
@@ -206,7 +206,7 @@ main {
 }
 
 .card1 {
-    background: url("./images/logo.webp");
+    background: url("./Pull-Simulator/images/intertwined_fateBackground-Filled.webp");
     background-size: cover;
     background-position: center;
 }
