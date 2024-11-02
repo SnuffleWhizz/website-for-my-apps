@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="./resources/logo.jpg" alt="kinder country logo" />
+            <nav id="nav-bar">
+                <a class="nav-link" href="#introduction">Introduction</a>
+                <a class="nav-link" href="#products">Our products</a>
+                <a class="nav-link" href="#trailer">Video Trailer</a>
+                <a class="nav-link" href="#signup">Sign Up</a>
+            </nav>
+        </header>
+        <img src="./resources/banner.jpg" alt="kinder country on table" class="head-img">
+        <main id="main">
+            <section id="introduction">
+                <h2>Kinder Country</h2>
+                <p id="intro-text">This is what a quick break with Kinder Country tastes like: Tasty cereals wrapped in a creamy milk chocolate layer. The once in a lifetime chocolate experience, which tastes crunchy and creamy at the same time.</p>
+                <h3>A breath of fresh air - with Kinder Country</h3>
+                <br>
+            </section>
+            <hr>
+            <br>
+            <section id="products">
+                <h2>Our products</h2>
+                <div class="grid-menu">
+                    <div class="card"><img src="./resources/card1.webp" alt="single kinder country" class="card-img"></div>
+                    <div class="card"><img src="./resources/card2.webp" alt="kinder country package" class="card-img"></div>
+                    <div class="card"><img src="./resources/card3.webp" alt="a lot of kinder country" class="card-img"></div>
+                </div>
+            </section>
+            <section id="trailer">
+                <iframe id="video" src="./resources/werbung.mp4"></iframe>
+            </section>
+            <hr>
+            <section id="signup">
+                <h2 class="margin-top-50">Sign Up to never miss a new Kinder Product</h2>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <div class="form-input">
+                        <label for="name" class="required-input">What's your name?</label>
+                        <input id="name" type="text" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="email" class="required-input">Enter your E-Mail:</label>
+                        <input id="email" type="email" name="email" placeholder="john.smith@gmail.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="feedback">Anything you want to tell us?</label>
+                        <textarea id="feedback" name="feedback" maxlength="300" cols="50" rows="50" placeholder="Put your thougts here..."></textarea>
+                    </div>
+                    <input id="submit" type="submit" value="Subscribe" action="https://www.freecodecamp.com/email-submit" method="post">
+                </form>
+            </section>
+            <footer>
+                <p>Business Information:</p>
+                <br>
+                <p>Ferero Kinder SE & Co KG</p>
+                <p>Westtangente 23-54</p>
+                <p>68542 Berlin</p>
+            </footer>
+        </main>
+    </body>
+</html>

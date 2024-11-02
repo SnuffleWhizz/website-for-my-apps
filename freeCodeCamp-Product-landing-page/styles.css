@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #00beef;
+    --secondary-color: rgb(118, 79, 34);
+    --accent-color: rgb(255, 111, 0);
+    --background-color: linen;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    background: var(--background-color);
+}
+
+hr {
+    margin: 10px 5px;
+    color: var(--secondary-color);
+}
+
+p, h1, h2, h3{
+    margin: 0 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    justify-items: center;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px;
+    overflow: hidden;
+    background: white;
+}
+
+.card-img {
+    object-fit: scale-down;
+    height: 100%;
+    width: 100%;
+}
+
+#trailer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+#video {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    box-shadow: 0 0 15px black;
+    border: none;
+}
+
+form {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+form input {
+    display: block;
+    box-shadow: 0 0 5px;
+    border: none;
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.form-input {
+    margin: 20px;
+}
+
+#feedback {
+    width: 80%;
+    aspect-ratio: 4 / 1;
+    padding: 5px;
+}
+
+.required-input::after {
+    content: " *";
+    color: rgb(228, 99, 99);
+}
+
+#submit {
+    margin: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px;
+}
+
+#header {
+    display: grid;
+    grid-template: 50px / 1fr 2fr;
+    width: 100dvw;
+    height: 50px;
+    background: var(--primary-color);
+    position: sticky;
+    top: 0;
+}
+
+#header img {
+    height: 95%;
+    aspect-ratio: 2 / 1;
+    align-self: center;
+}
+
+#nav-bar {
+    grid-column: 3 / -1;
+    display: flex;
+    place-items: center;
+    column-gap: 10px;
+    margin: 10px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 2px 8px;
+}
+
+#nav-bar a:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.head-img {
+    width: 100%;
+}
+
+main {
+    margin-top: 50px;
+}
+
+footer {
+    background: linear-gradient(var(--background-color) 0%, var(--secondary-color) 40%);
+    margin-top: 100px;
+    height: 250px;
+    width: 100%;
+    padding: 100px 20px;
+}
+
+label {
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        height: 188px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    .card {
+        height: 125px;
+        width: 100px;
+    }
+    footer {
+        height: 150px;
+    }
+}
