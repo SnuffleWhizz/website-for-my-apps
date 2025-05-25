@@ -174,11 +174,13 @@ footer {
 .menu-item {
   border-bottom: 1px solid #ddd;
   padding: 0.5rem 0;
+  gap: 1rem;
 }
 .menu-item h4 {
   margin: 0;
   font-size: 1.1rem;
 }
 .menu-item span {
+  margin-left: 10px;
   float: right;
 }
