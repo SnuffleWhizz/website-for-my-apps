@@ -36,6 +36,7 @@ async function loadMenu() {
             }
 
             section.appendChild(itemDiv);
+            section.appendChild(document.createElement('hr'));
           });
 
           menuContainer.appendChild(section);
