@@ -210,3 +210,9 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+.card3 {
+    background: url("./Da-Noyan/Images/restaurant.webp");
+    background-size: cover;
+    background-position: center;
+}
