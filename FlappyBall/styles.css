@@ -7,7 +7,7 @@
 }
 
 .no-zoom {
-    user-select: none;
+    touch-action: manipulation;
 }
 
 body {

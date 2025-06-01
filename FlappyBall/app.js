@@ -49,6 +49,13 @@ function toggleControls() {
     }
 }
 
+function noZoom() {
+    const els = document.getElementsByClassName("*");
+    for (let i = els.length-1; i <= 0; i--) {
+        els[i].style.touchAction = "manipulation";
+    }
+}
+
 function clearScore() {
     const score = document.getElementById("score");
     score.innerHTML = 0;
