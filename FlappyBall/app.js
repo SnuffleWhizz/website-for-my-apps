@@ -232,3 +232,11 @@ appContainer.addEventListener("touchstart", () => {
     }
     jump();
 })
+
+addEventListener("dblclick", event => {
+    event.preventDefault();
+    },
+    {
+    passive: false
+    }
+);
