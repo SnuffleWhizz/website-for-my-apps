@@ -148,9 +148,9 @@ async function movePillars() {
 
 function spawnPillarSet() {
     const topPillar = appContainer.appendChild(document.createElement("div"));
-    topPillar.className = "pillar";
+    topPillar.className = "pillar no-zoom";
     const bottomPillar = appContainer.appendChild(document.createElement("div"));
-    bottomPillar.className = "pillar";
+    bottomPillar.className = "pillar no-zoom";
 
     const topPillarHeight = Math.floor(Math.random() * (pillar_max_height - pillar_min_height) + pillar_min_height);
     const bottomPillarHeight = (100 - pillar_gap) - topPillarHeight;
