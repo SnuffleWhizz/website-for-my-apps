@@ -225,3 +225,10 @@ addEventListener("click", event => {
     }
     jump();
 });
+
+appContainer.addEventListener("touchstart", () => {
+    if (!game_active) {
+        startGame();
+    }
+    jump();
+})
