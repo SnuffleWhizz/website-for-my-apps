@@ -233,7 +233,6 @@ appContainer.addEventListener("touchstart", () => {
     jump();
 })
 
-addEventListener('touchstart', e => {
+addEventListener('touchend', e => {
   e.preventDefault();
-  $(this).click();
 });
