@@ -119,6 +119,7 @@ async function gravity() {
         } else {
             gameOver();
         }
+        noZoom();
     }
 }
 
