@@ -234,7 +234,7 @@ addEventListener("click", event => {
     jump();
 });
 
-appContainer.addEventListener("touchstart", () => {
+document.getElementById("body").addEventListener("touchstart", () => {
     if (!game_active) {
         startGame();
     }
